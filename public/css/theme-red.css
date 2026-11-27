@@ -1,0 +1,13 @@
+/* 规程红：只在「规程·序列Ⅰ」的大厅页生效（css/screens/lobby.css 的 .lobby-hub[data-season="act3autochess"]）。
+   标题、入场、预下载、组队、局内、选择、设置等界面一律保持原版青绿，所以这里不再覆盖全局变量。 */
+
+/* 设置弹窗不管从哪个界面打开，页签与标签一律用原版青绿 */
+.setdlg {
+  --mint-400: #59f4ca;
+  --mint-500: #4ed8af;
+  --mint-600: #35d8b4;
+  --mint-glow: #17f9b7;
+  --mint-a10: rgba(78, 216, 175, .10);
+  --mint-a20: rgba(78, 216, 175, .20);
+  --mint-a35: rgba(78, 216, 175, .35);
+}
