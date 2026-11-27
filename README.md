@@ -29,15 +29,23 @@ npm start
 
 ## 资源包
 
-在 [Releases](../../releases/latest) 下载 `stronghold-lite-assets.zip`，解压后目录结构为 `public/assets/...`。
+三份，都在 [Releases](../../releases/latest)，解压到项目根目录（得到 `public/assets/`）：
+
+| 文件 | 体积 | 内容 |
+|---|---|---|
+| `stronghold-lite-assets.zip` | 87MB | 基础包：头像、异格立绘、敌人模型与敌人 spine、UI、字体 |
+| `stronghold-lite-audio.zip` | 479MB | 全部语音与音频（15472 个文件） |
+| `stronghold-lite-spine-op.zip` | 499MB | 干员骨架模型（3431 个文件，前/后视角） |
 
 ```bash
 unzip stronghold-lite-assets.zip -d public/
+unzip stronghold-lite-audio.zip -d public/
+unzip stronghold-lite-spine-op.zip -d public/
 ```
 
-包里是当前线上实例正在用的那套素材：干员头像、干员立绘（alter/异格 138 张）、敌人模型、敌人 spine（978 个）、UI、字体、技能图标。
+三份合起来约 1.06GB，就是完整素材，解压后目录结构都是 `public/assets/...`，无需改代码。
 
-**不含**：语音与 BGM 等全部音频，以及普通干员的 spine（约 520MB）。所以本地跑起来是静音的，普通干员的卡面用头像兜底显示。需要完整素材可自行从镜像补齐到 `public/assets/`，目录结构与包内一致，无需改代码。
+线上实例只部署了基础包（省流量与镜像体积），所以线上没有语音、普通干员用头像兜底；设置里的「一次性下载全部资源」下载的是**服务器实际提供的**素材。要在自己机器上玩全量，装三份包即可。
 
 ## 局域网联机
 
